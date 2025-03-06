@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <audio id="notification-sound" src="bubblepop.mp3" preload="auto"></audio>
+    <audio id="notification-sound-continue" src="bellsound.mp3" preload="auto"></audio>
+    <title>Egg timer</title>
+</head>
+<body>
+    <h1>Egg Timer</h1>
+    <h2 id="timerDisplay">00:00</h2>
+    <button onclick="startTimer(300)">Soft Boiled (5 min)</button>
+    <button onclick="startTimer(600)">Medium Boiled (10 min)</button>
+    <button onclick="startTimer(900)">Hard Boiled (15 min)</button>
+    <button onclick="resetTimer()">Reset</button>
+    <script src="script.js"></script>
+</body>
+</html>
