@@ -13,11 +13,16 @@
 </head>
 <body>
     <h1>Egg Timer</h1>
-    <h2 class="timerDisplay" id="timerDisplay">00:00</h2>
-    <button onclick="startTimer(360)">Soft Boiled (6 min)</button>
-    <button onclick="startTimer(600)">Medium Boiled (10 min)</button>
-    <button onclick="startTimer(720)">Hard Boiled (12 min)</button>
+    <h2 class="timerDisplay" id="timerDisplay" style="display: none">00:00</h2>
+    <div class="buttons">
+    <button class="buttonSoft" onclick="startTimer(3)">Soft Boiled (6 min)</button>
+    <br />
+    <button class="buttonMedium" onclick="startTimer(600)">Medium Boiled (10 min)</button>
+    <br />
+    <button class="buttonHard" onclick="startTimer(720)">Hard Boiled (12 min)</button>
+    <br />
     <button onclick="resetTimer()">Reset</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

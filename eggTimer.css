@@ -1,13 +1,30 @@
 body{
+    margin: 50px;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 /* google font */
 
 h1{
     color: yellowgreen;
 }
+h2{
+    padding: 20px;
+}
+.buttons{
+    padding: 20px;
+}
 button{
     font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: coral;
+}
+button:hover{
+    background-color: aqua;
+}
+button:focus{
+    background-color: blue;
 }
 .timerDisplay{
     color: cadetblue;
