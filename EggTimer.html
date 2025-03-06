@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <audio id="notification-sound" src="bubblepop.mp3" preload="auto"></audio>
-    <audio id="notification-sound-continue" src="bellsound.mp3" preload="auto"></audio>
+    <link rel="stylesheet" type="text/css" href="./eggTimer.css">
+    <audio id="notification-sound" src="./bubblepop.mp3" preload="auto"></audio>
+    <audio id="notification-sound-continue" src="./bellsound.mp3" preload="auto"></audio>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Egg timer</title>
 </head>
 <body>
     <h1>Egg Timer</h1>
-    <h2 id="timerDisplay">00:00</h2>
-    <button onclick="startTimer(300)">Soft Boiled (5 min)</button>
+    <h2 class="timerDisplay" id="timerDisplay">00:00</h2>
+    <button onclick="startTimer(360)">Soft Boiled (6 min)</button>
     <button onclick="startTimer(600)">Medium Boiled (10 min)</button>
-    <button onclick="startTimer(900)">Hard Boiled (15 min)</button>
+    <button onclick="startTimer(720)">Hard Boiled (12 min)</button>
     <button onclick="resetTimer()">Reset</button>
     <script src="script.js"></script>
 </body>

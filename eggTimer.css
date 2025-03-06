@@ -1,0 +1,14 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* google font */
+
+h1{
+    color: yellowgreen;
+}
+button{
+    font-family: 'Courier New', Courier, monospace;
+}
+.timerDisplay{
+    color: cadetblue;
+}
