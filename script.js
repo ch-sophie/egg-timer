@@ -23,13 +23,11 @@ function updateTimer() {
         `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 }
 
-// when reset
 function resetTimer() {
     clearInterval(timer);
     timeRemaining = 0;
     document.getElementById("timerDisplay").style.display = "none";
     document.getElementById("timerDisplay").innerText = "00:00";
-    // pause sound when click on reset
     if (typeof sound !== 'undefined') {
         sound.pause();
         sound.currentTime = 0;
