@@ -31,7 +31,9 @@ function resetTimer() {
     timeRemaining = 0;
     document.getElementById("timerDisplay").style.display = "none";
     document.getElementById("timerDisplay").innerText = "00:00";
-    // pause sound when click on reset 
-    notificationSoundContinue.pause();
-    notificationSoundContinue.currentTime = 0;
+    // pause sound when click on reset - fix
+    if (typeof notificationSoundContinue !== 'undefined') {
+        notificationSoundContinue.pause();
+        notificationSoundContinue.currentTime = 0;
+    }
 }
