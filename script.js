@@ -1,5 +1,6 @@
 let timer;
 let timeRemaining = 0;
+const sound = document.getElementById("notification-sound");
 
 function startTimer(duration) {
     timeRemaining = duration;
@@ -12,10 +13,7 @@ function updateTimer() {
     if (timeRemaining <= 0) {
         clearInterval(timer);
         document.getElementById("timerDisplay").innerText = "Time's up, your eggs are done!";
-        const notificationSound = document.getElementById("notification-sound");
-        const notificationSoundContinue = document.getElementById("notification-sound-continue");
-        notificationSound.play();
-        notificationSoundContinue.play();
+        sound.play();
         return;
     }
     timeRemaining--;
@@ -31,9 +29,9 @@ function resetTimer() {
     timeRemaining = 0;
     document.getElementById("timerDisplay").style.display = "none";
     document.getElementById("timerDisplay").innerText = "00:00";
-    // pause sound when click on reset - fix
-    if (typeof notificationSoundContinue !== 'undefined') {
-        notificationSoundContinue.pause();
-        notificationSoundContinue.currentTime = 0;
+    // pause sound when click on reset
+    if (typeof sound !== 'undefined') {
+        sound.pause();
+        sound.currentTime = 0;
     }
 }
