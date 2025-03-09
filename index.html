@@ -9,15 +9,17 @@
 </head>
 <body>
     <h1>Egg Timer</h1>
-    <h2 class="timerDisplay" id="timerDisplay" style="display: none">00:00</h2>
+    <div class="circle">
+        <p class="timerDisplay" id="timerDisplay" style="display: block">00:00</p>
+    </div>
     <div class="buttons">
-    <button class="buttonSoft" onclick="startTimer(3)">Soft Boiled (6 min)</button>
-    <br />
-    <button class="buttonMedium" onclick="startTimer(600)">Medium Boiled (10 min)</button>
-    <br />
-    <button class="buttonHard" onclick="startTimer(720)">Hard Boiled (12 min)</button>
-    <br />
-    <button onclick="resetTimer()">Reset</button>
+        <button class="buttonSoft" onclick="startTimer(3)">Soft Boiled (6 min)</button>
+        <br />
+        <button class="buttonMedium" onclick="startTimer(600)">Medium Boiled (10 min)</button>
+        <br />
+        <button class="buttonHard" onclick="startTimer(720)">Hard Boiled (12 min)</button>
+        <br />
+        <button onclick="resetTimer()">Reset</button>
     </div>
     <script src="script.js"></script>
 </body>

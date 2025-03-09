@@ -2,15 +2,25 @@ body{
     margin: 50px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    background-color: #fad660;
 }
 /* google font */
 
 h1{
-    color: yellowgreen;
+    color: #FFFFFF;
 }
-h2{
-    padding: 20px;
+.circle{
+    /* position: absolute; */
+    width: 300px;
+    height: 360px;
+    border-radius: 50%;
+    background: #FAD660;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .buttons{
     padding: 20px;
 }

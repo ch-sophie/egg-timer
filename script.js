@@ -26,7 +26,6 @@ function updateTimer() {
 function resetTimer() {
     clearInterval(timer);
     timeRemaining = 0;
-    document.getElementById("timerDisplay").style.display = "none";
     document.getElementById("timerDisplay").innerText = "00:00";
     if (typeof sound !== 'undefined') {
         sound.pause();
