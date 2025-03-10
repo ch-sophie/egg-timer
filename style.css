@@ -10,15 +10,14 @@ h1{
     color: #FFFFFF;
 }
 .circle{
-    /* position: absolute; */
     width: 300px;
     height: 360px;
     border-radius: 50%;
-    background: #FAD660;
     border: 1px solid #000000;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .buttons{
@@ -37,5 +36,6 @@ button:focus{
     background-color: blue;
 }
 .timerDisplay{
-    color: cadetblue;
+    color: #FFFFFF;
+    font-size: 50px;
 }
