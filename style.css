@@ -8,6 +8,7 @@ body{
 
 h1{
     color: #FFFFFF;
+    font-size: 50px;
 }
 .circle{
     width: 300px;
@@ -19,23 +20,22 @@ h1{
     align-items: center;
     margin: auto;
 }
-
+.timerDisplay{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 600;
+}
 .buttons{
-    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
 }
 button{
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 5px;
     background-color: coral;
-}
-button:hover{
-    background-color: aqua;
 }
 button:focus{
     background-color: blue;
-}
-.timerDisplay{
-    color: #FFFFFF;
-    font-size: 50px;
 }
