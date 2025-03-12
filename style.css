@@ -26,16 +26,28 @@ h1{
     font-weight: 600;
 }
 .buttons{
-    margin: 20px;
+    margin: 25px;
     display: flex;
     justify-content: center;
 }
 button{
     font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 600;
+    color: #FFFFFF;
     cursor: pointer;
-    margin: 5px;
-    background-color: coral;
+    margin: 10px;
+    background-color: #f66a51;
+    border: none;
 }
-button:focus{
-    background-color: blue;
+button:active, button:hover{
+    background-color: #cef558;
+}
+@media screen and (max-width: 392px){
+    .circle{
+        width: auto;
+    }
+    h1{
+        font-size: 40px;
+    }
 }
