@@ -36,7 +36,8 @@ button{
     font-weight: 600;
     color: #FFFFFF;
     cursor: pointer;
-    margin: 10px;
+    margin: 5px;
+    padding: 5px;
     background-color: #f66a51;
     border: none;
 }
